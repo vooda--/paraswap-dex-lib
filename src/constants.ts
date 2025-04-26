@@ -44,6 +44,7 @@ export enum Network {
   ARBITRUM = 42161,
   OPTIMISM = 10,
   BASE = 8453,
+  MONAD = 10143,
   SEPOLIA = 11155111,
   GNOSIS = 100,
 }
