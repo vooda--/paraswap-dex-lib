@@ -117,6 +117,20 @@ export const Adapters: {
       },
     ],
   },
+  [Network.MONAD]: {
+    [SwapSide.SELL]: [
+      {
+        name: 'BaseAdapter01',
+        index: 4,
+      },
+    ],
+    [SwapSide.BUY]: [
+      {
+        name: 'BaseBuyAdapter',
+        index: 4,
+      },
+    ],
+  },
 };
 
 export const UniswapV2Config: DexConfigMap<DexParams> = {
@@ -128,6 +142,28 @@ export const UniswapV2Config: DexConfigMap<DexParams> = {
         '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f',
       poolGasCost: 80 * 1000,
       feeCode: 30,
+    },
+    [Network.BASE]: {
+      factoryAddress: '0x8909Dc15e40173Ff4699343b6eB8132c65e18eC6',
+      router: '0x75d199EfB540e47D27D52c62Da3E7daC2B9e834F',
+      // adapterAddress: '0xa761Ae48794B1Fc437e213AAEef08a05D3ab0034',
+      // adapterIndex: 6,
+      initCode:
+        '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f',
+      poolGasCost: 80 * 1000,
+      feeCode: 30,
+      // needWrapNative: false,
+    },
+    [Network.MONAD]: {
+      factoryAddress: '0x733E88f248b742db6C14C0b1713Af5AD7fDd59D0',
+      router: '0x75d199EfB540e47D27D52c62Da3E7daC2B9e834F',
+      // adapterAddress: '0x270c17c42F083140a1967E8351782b11003e279c',
+      // adapterIndex: 4,
+      initCode:
+        '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f',
+      poolGasCost: 80 * 1000,
+      feeCode: 30,
+      // needWrapNative: false,
     },
     [Network.ARBITRUM]: {
       factoryAddress: '0xf1D7CC64Fb4452F05c498126312eBE29f30Fbcf9',
@@ -150,13 +186,13 @@ export const UniswapV2Config: DexConfigMap<DexParams> = {
       poolGasCost: 80 * 1000,
       feeCode: 30,
     },
-    [Network.BASE]: {
-      factoryAddress: '0x8909Dc15e40173Ff4699343b6eB8132c65e18eC6',
-      initCode:
-        '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f',
-      poolGasCost: 80 * 1000,
-      feeCode: 30,
-    },
+    // [Network.BASE]: {
+    //   factoryAddress: '0x8909Dc15e40173Ff4699343b6eB8132c65e18eC6',
+    //   initCode:
+    //     '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f',
+    //   poolGasCost: 80 * 1000,
+    //   feeCode: 30,
+    // },
     [Network.OPTIMISM]: {
       factoryAddress: '0x0c3c1c532F1e39EdF36BE9Fe0bE1410313E074Bf',
       initCode:
@@ -345,6 +381,17 @@ export const UniswapV2Config: DexConfigMap<DexParams> = {
       poolGasCost: 80 * 1000,
       feeCode: 20,
     },
+    [Network.MONAD]: {
+      factoryAddress: '0xb26338DE76c32d4faFfD11412F9e34bF31151fd8',
+      router: '0xD5ABE08829813D5aE1A9B32c3B16a8Fba07F9506',
+      // adapterAddress: '0x270c17c42F083140a1967E8351782b11003e279c',
+      // adapterIndex: 4,
+      initCode:
+        '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f',
+      poolGasCost: 80 * 1000,
+      feeCode: 30,
+      // needWrapNative: false,
+    },
   },
   PancakeSwapV2: {
     [Network.BSC]: {
@@ -471,6 +518,84 @@ export const UniswapV2Config: DexConfigMap<DexParams> = {
       feeCode: 20,
     },
   },
+  ['Madness']: {
+    [Network.MONAD]: {
+      factoryAddress: '0xb26338DE76c32d4faFfD11412F9e34bF31151fd8',
+      router: '0x64Aff7245EbdAAECAf266852139c67E4D8DBa4de',
+      // adapterAddress: '0x270c17c42F083140a1967E8351782b11003e279c',
+      // adapterIndex: 4,
+      initCode:
+        '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f',
+      poolGasCost: 80 * 1000,
+      feeCode: 30,
+      // needWrapNative: false,
+    },
+  },
+  ['Atlantis']: {
+    [Network.MONAD]: {
+      factoryAddress: '0xb26338DE76c32d4faFfD11412F9e34bF31151fd8',
+      router: '0xc7E09B556E1a00cfc40b1039D6615f8423136Df7',
+      // adapterAddress: '0x270c17c42F083140a1967E8351782b11003e279c',
+      // adapterIndex: 4,
+      initCode:
+        '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f',
+      poolGasCost: 80 * 1000,
+      feeCode: 30,
+      // needWrapNative: false,
+    },
+  },
+  ['OctoSwap']: {
+    [Network.MONAD]: {
+      factoryAddress: '0xb26338DE76c32d4faFfD11412F9e34bF31151fd8',
+      router: '0xb6091233aAcACbA45225a2B2121BBaC807aF4255',
+      // adapterAddress: '0x270c17c42F083140a1967E8351782b11003e279c',
+      // adapterIndex: 4,
+      initCode:
+        '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f',
+      poolGasCost: 80 * 1000,
+      feeCode: 30,
+      // needWrapNative: false,
+    },
+  },
+  ['BEAN Exchange']: {
+    [Network.MONAD]: {
+      factoryAddress: '0xb26338DE76c32d4faFfD11412F9e34bF31151fd8',
+      router: '0xCa810D095e90Daae6e867c19DF6D9A8C56db2c89',
+      // adapterAddress: '0x270c17c42F083140a1967E8351782b11003e279c',
+      // adapterIndex: 4,
+      initCode:
+        '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f',
+      poolGasCost: 80 * 1000,
+      feeCode: 30,
+      // needWrapNative: false,
+    },
+  },
+  ['Monad TestSwap']: {
+    [Network.MONAD]: {
+      factoryAddress: '0xb26338DE76c32d4faFfD11412F9e34bF31151fd8',
+      router: '0xD5ABE08829813D5aE1A9B32c3B16a8Fba07F9506',
+      // adapterAddress: '0x270c17c42F083140a1967E8351782b11003e279c',
+      // adapterIndex: 4,
+      initCode:
+        '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f',
+      poolGasCost: 80 * 1000,
+      feeCode: 30,
+      // needWrapNative: false,
+    },
+  },
+  ['Monad Testnet Uniswap']: {
+    [Network.MONAD]: {
+      factoryAddress: '0xb26338DE76c32d4faFfD11412F9e34bF31151fd8',
+      router: '0xD5ABE08829813D5aE1A9B32c3B16a8Fba07F9506',
+      // adapterAddress: '0x270c17c42F083140a1967E8351782b11003e279c',
+      // adapterIndex: 4,
+      initCode:
+        '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f',
+      poolGasCost: 80 * 1000,
+      feeCode: 30,
+      // needWrapNative: false,
+    },
+  },
   SpiritSwap: {
     [Network.FANTOM]: {
       factoryAddress: '0xEF45d134b73241eDa7703fa787148D9C9F4950b0',
@@ -559,6 +684,9 @@ export const UniswapV2Config: DexConfigMap<DexParams> = {
   BaseSwap: {
     [Network.BASE]: {
       factoryAddress: '0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB',
+      router: '0x75d199EfB540e47D27D52c62Da3E7daC2B9e834F',
+      // adapterAddress: '0xa761Ae48794B1Fc437e213AAEef08a05D3ab0034',
+      // adapterIndex: 6,
       initCode:
         '0xb618a2730fae167f5f8ac7bd659dd8436d571872655bcb6fd11f2158c8a64a3b',
       poolGasCost: 90 * 1000,

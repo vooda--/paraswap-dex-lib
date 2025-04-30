@@ -3,6 +3,9 @@
   "version": "4.1.16",
   "main": "build/index.js",
   "types": "build/index.d.ts",
+  "files": [
+    "build"
+  ],
   "repository": "https://github.com/paraswap/paraswap-dex-lib",
   "author": "dev@paraswap.io",
   "license": "MIT",
