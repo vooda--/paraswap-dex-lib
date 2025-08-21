@@ -156,7 +156,7 @@ export const UniswapV2Config: DexConfigMap<DexParams> = {
     },
     [Network.MONAD]: {
       factoryAddress: '0x733E88f248b742db6C14C0b1713Af5AD7fDd59D0',
-      router: '0x75d199EfB540e47D27D52c62Da3E7daC2B9e834F',
+      router: '0xfB8e1C3b833f9E67a71C859a132cf783b645e436',
       // adapterAddress: '0x270c17c42F083140a1967E8351782b11003e279c',
       // adapterIndex: 4,
       initCode:
@@ -382,8 +382,8 @@ export const UniswapV2Config: DexConfigMap<DexParams> = {
       feeCode: 20,
     },
     [Network.MONAD]: {
-      factoryAddress: '0xb26338DE76c32d4faFfD11412F9e34bF31151fd8',
-      router: '0xD5ABE08829813D5aE1A9B32c3B16a8Fba07F9506',
+      factoryAddress: '0x82438CE666d9403e488bA720c7424434e8Aa47CD',
+      router: '0x3a3eBAe0Eec80852FBC7B9E824C6756969cc8dc1',
       // adapterAddress: '0x270c17c42F083140a1967E8351782b11003e279c',
       // adapterIndex: 4,
       initCode:
@@ -520,7 +520,7 @@ export const UniswapV2Config: DexConfigMap<DexParams> = {
   },
   ['Madness']: {
     [Network.MONAD]: {
-      factoryAddress: '0xb26338DE76c32d4faFfD11412F9e34bF31151fd8',
+      factoryAddress: '0x642871094fd976de43a21cB48aA20B4A8baAAa0D',
       router: '0x64Aff7245EbdAAECAf266852139c67E4D8DBa4de',
       // adapterAddress: '0x270c17c42F083140a1967E8351782b11003e279c',
       // adapterIndex: 4,
@@ -533,7 +533,7 @@ export const UniswapV2Config: DexConfigMap<DexParams> = {
   },
   ['Atlantis']: {
     [Network.MONAD]: {
-      factoryAddress: '0xb26338DE76c32d4faFfD11412F9e34bF31151fd8',
+      factoryAddress: '0xa2b78D020a4521866e129E27505B6c20AE9e3852',
       router: '0xc7E09B556E1a00cfc40b1039D6615f8423136Df7',
       // adapterAddress: '0x270c17c42F083140a1967E8351782b11003e279c',
       // adapterIndex: 4,
@@ -546,7 +546,7 @@ export const UniswapV2Config: DexConfigMap<DexParams> = {
   },
   ['OctoSwap']: {
     [Network.MONAD]: {
-      factoryAddress: '0xb26338DE76c32d4faFfD11412F9e34bF31151fd8',
+      factoryAddress: '0xe26dd94f67Ca3615fcaF6062750147F37Df84F7a',
       router: '0xb6091233aAcACbA45225a2B2121BBaC807aF4255',
       // adapterAddress: '0x270c17c42F083140a1967E8351782b11003e279c',
       // adapterIndex: 4,
@@ -559,7 +559,7 @@ export const UniswapV2Config: DexConfigMap<DexParams> = {
   },
   ['BEAN Exchange']: {
     [Network.MONAD]: {
-      factoryAddress: '0xb26338DE76c32d4faFfD11412F9e34bF31151fd8',
+      factoryAddress: '0x0085388Da29e74b66ac6b6fF690973bE05403f67',
       router: '0xCa810D095e90Daae6e867c19DF6D9A8C56db2c89',
       // adapterAddress: '0x270c17c42F083140a1967E8351782b11003e279c',
       // adapterIndex: 4,
@@ -587,6 +587,45 @@ export const UniswapV2Config: DexConfigMap<DexParams> = {
     [Network.MONAD]: {
       factoryAddress: '0xb26338DE76c32d4faFfD11412F9e34bF31151fd8',
       router: '0xD5ABE08829813D5aE1A9B32c3B16a8Fba07F9506',
+      // adapterAddress: '0x270c17c42F083140a1967E8351782b11003e279c',
+      // adapterIndex: 4,
+      initCode:
+        '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f',
+      poolGasCost: 80 * 1000,
+      feeCode: 30,
+      // needWrapNative: false,
+    },
+  },
+  ['Monda']: {
+    [Network.MONAD]: {
+      factoryAddress: '0xC921877BEcB785fDFbb96B6D8354Bb443C015995',
+      router: '0xc80585f78A6e44fb46e1445006f820448840386e',
+      // adapterAddress: '0x270c17c42F083140a1967E8351782b11003e279c',
+      // adapterIndex: 4,
+      initCode:
+        '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f',
+      poolGasCost: 80 * 1000,
+      feeCode: 30,
+      // needWrapNative: false,
+    },
+  },
+  ['zkSwap']: {
+    [Network.MONAD]: {
+      factoryAddress: '0x095f464B7A6A45b4f03abB32E7C42e05F0c58E9b',
+      router: '0x3be99Db246c81df2Bd8Dc0d708E03F64e1A84917',
+      // adapterAddress: '0x270c17c42F083140a1967E8351782b11003e279c',
+      // adapterIndex: 4,
+      initCode:
+        '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f',
+      poolGasCost: 80 * 1000,
+      feeCode: 30,
+      // needWrapNative: false,
+    },
+  },
+  ['BubbleFi']: {
+    [Network.MONAD]: {
+      factoryAddress: '0xd829c1d3649dbc3fd96d3d22500ef33a46daae46',
+      router: '0x0f2D067f8438869da670eFc855eACAC71616ca31',
       // adapterAddress: '0x270c17c42F083140a1967E8351782b11003e279c',
       // adapterIndex: 4,
       initCode:
