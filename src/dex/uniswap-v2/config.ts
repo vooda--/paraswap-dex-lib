@@ -134,6 +134,19 @@ export const Adapters: {
 };
 
 export const UniswapV2Config: DexConfigMap<DexParams> = {
+  Uniswap: {
+    [Network.MONAD]: {
+      factoryAddress: '0x733E88f248b742db6C14C0b1713Af5AD7fDd59D0',
+      router: '0xfB8e1C3b833f9E67a71C859a132cf783b645e436',
+      // adapterAddress: '0x270c17c42F083140a1967E8351782b11003e279c',
+      // adapterIndex: 4,
+      initCode:
+        '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f',
+      poolGasCost: 80 * 1000,
+      feeCode: 30,
+      // needWrapNative: false,
+    },
+  },
   UniswapV2: {
     [Network.MAINNET]: {
       subgraphURL: 'EYCKATKGBKLWvSfwvBjzfCBmGwYNdVkduYXVivCsLRFu',
